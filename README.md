@@ -16,7 +16,7 @@ Wave Financial Manager is a simple web application that helps users manage their
 
 ## Development
 
-The development of Wave Financial Manager took approximately 40 hours ( this included some time to master the chart js library and working on the css parts for good UI look ). The application was built using HTML, CSS, and JavaScript. The following libraries were used:
+The development of Wave Financial Manager  ( this included some time to master the chart js library and working on the css parts for good UI look ). The application was built using HTML, CSS, and JavaScript. The following libraries were used:
 
 * Chart.js for creating charts
 * Font Awesome for icons
