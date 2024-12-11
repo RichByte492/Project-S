@@ -34,7 +34,6 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
         }
 
         .header {
@@ -463,7 +462,7 @@
         </div>
     </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Data storage
         let incomes = JSON.parse(localStorage.getItem('incomes')) || [];
@@ -726,7 +725,8 @@
                 const date = new Date();
                 date.setMonth(date.getMonth() - i);
                 const month = date.toLocaleString('default', { month: 'short' });
-                const monthYear = `${month} ${date.getFullYear()}`;
+                const year = date.getFullYear();
+                const monthYear = `${month} ${year}`;
 
                 months.push(monthYear);
 
@@ -758,6 +758,9 @@
         }
 
         // Initial render
+        updateIncomeLists();
+        updateExpenseLists();
+        updateBudgetList();
         updateSummary();
     </script>
 </body>
